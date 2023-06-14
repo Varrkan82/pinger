@@ -1,2 +1,2 @@
 # pinger
-Check host alailability with ping and send Telegram Alert
+Checking host availability with ping and send Telegram Alert
