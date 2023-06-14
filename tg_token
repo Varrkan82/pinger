@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+[[ -f .tg_token ]] && source $(dirname "${BASH_SOURCE[0]}")/.tg_token || TELEGRAM_BOT_TOKEN='112233445:AAAAAAAAAAAAAAA_gh8_XXXXXXXXX'
