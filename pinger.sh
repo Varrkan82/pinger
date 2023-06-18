@@ -8,7 +8,7 @@ M_HOST="${1:-YourYostname.com"
 CHAT_ID='-00000000'
 MSG="
 	Host ${M_HOST} says :: 
-	\${MESSAGE}
+	\${ALERT_MESSAGE}
 "
 
 TG_REQUEST="curl https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID} --form \"text=${MSG}\""
