@@ -2,7 +2,9 @@
 
 trap "exit" INT
 
-source $(dirname "${BASH_SOURCE[0]}")/tg_token
+[[ -f .tg_token ]] && source $(dirname "${BASH_SOURCE[0]}")/.tg_token || source $(dirname "${BASH_SOURCE[0]}")/tg_token
+
+TELEGRAM_BOT_TOKEN="${TG_BOT_TOKEN}"
 
 M_HOST="${1:-YourYostname.com"
 CHAT_ID='-00000000'
